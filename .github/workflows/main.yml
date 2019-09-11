@@ -14,5 +14,5 @@ jobs:
         ll > text
         git commit -am 'test add'
         git push origin HEAD
-    - env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
