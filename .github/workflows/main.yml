@@ -13,7 +13,7 @@ jobs:
       run: |
         ls -la > text
         git add text
-	git commit -m 'test add'
+        git commit -m 'test add'
         git push origin HEAD
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
