@@ -11,8 +11,9 @@ jobs:
     - uses: actions/checkout@v1
     - name: commit something and push
       run: |
-        ll > text
-        git commit -am 'test add'
+        ls -la > text
+        git add text
+	git commit -m 'test add'
         git push origin HEAD
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
